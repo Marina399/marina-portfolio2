@@ -843,10 +843,13 @@ nav.open .nav-hamburger span:nth-child(3){transform:translateY(-6.5px) rotate(-4
     <span></span><span></span><span></span>
   </button>
 </nav>
-<div class="nav-drawer" id="nav-drawer" role="navigation" aria-label="Mobile navigation">
-  <button class="nav-btn" onclick="scrollToWork();closeMenu()">Work</button>
-  <button class="nav-btn" onclick="scrollToProcess();closeMenu()">Process</button>
-  <button class="nav-cta" style="margin-top:8px" onclick="showPage('contact');closeMenu()"><span>Say hello →</span></button>
+
+<div class="nav-drawer" id="nav-drawer" aria-hidden="true">
+  <div class="drawer-links">
+    <button class="drawer-btn" onclick="scrollToWork();closeMenu()">Work</button>
+    <button class="drawer-btn" onclick="scrollToProcess();closeMenu()">Process</button>
+    <button class="drawer-cta" onclick="showPage('contact');closeMenu()">Say hello →</button>
+  </div>
 </div>
 
 
