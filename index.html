@@ -93,7 +93,7 @@ body{font-family:var(--sans);background:var(--bg);color:var(--ink);-webkit-font-
 @keyframes heroRight{from{opacity:0;transform:translateX(30px) scale(.97)}to{opacity:1;transform:translateX(0) scale(1)}}
 .photo-wrap{position:relative}.floating-tag{position:absolute;z-index:10;background:var(--surface);border:1px solid var(--border);border-radius:999px;padding:8px 16px;font-size:12px;font-weight:500;white-space:nowrap;box-shadow:0 4px 20px rgba(74,142,200,.12);animation:floatTag 4s var(--ease-out) infinite alternate}.tag-experience{top:40px;right:-30px}.tag-location{bottom:60px;left:-40px}@keyframes floatTag{from{transform:translateY(0)}to{transform:translateY(-10px)}}.photo-circle{width:260px;height:260px;border-radius:50%;overflow:hidden;position:relative;z-index:1}
 .photo-circle img{width:100%;height:100%;object-fit:cover}
-.blob-ring{position:absolute;top:-32px;left:-32px;width:324px;height:324px;border-radius:50%;border:1px solid rgba(74,142,200,.18);pointer-events:none;animation:rotateSlow 20s linear infinite}
+.blob-ring{position:absolute;top:-32px;left:-32px;width:324px;height:324px;border-radius:50%;border:1px solid rgba(74,142,200,.18);pointer-events:none;animation:rotateSlow  linear infinite}
 .blob-ring2{position:absolute;top:-58px;left:-58px;width:376px;height:376px;border-radius:50%;border:1px solid rgba(74,142,200,.08);pointer-events:none;animation:rotateSlow 30s linear infinite reverse}
 @keyframes rotateSlow{to{transform:rotate(360deg)}}
 .organic-line{opacity:.4;margin-top:-4px}
@@ -123,7 +123,7 @@ body{font-family:var(--sans);background:var(--bg);color:var(--ink);-webkit-font-
    MARQUEE
 ───────────────────────────────────────── */
 .marquee-section{padding:24px 0;background:var(--surface);border-top:1px solid var(--border);border-bottom:1px solid var(--border);overflow:hidden}
-.marquee-track{display:flex;width:max-content;animation:marqueeScroll 30s linear infinite}
+.marquee-track{display:flex;width:max-content;animation:marqueeScroll 50s linear infinite}
 .marquee-track:hover{animation-play-state:paused}
 .marquee-item{display:flex;align-items:center;gap:10px;padding:0 32px;font-size:12.5px;font-weight:500;color:var(--ink-60);letter-spacing:.05em;text-transform:uppercase;white-space:nowrap}
 .marquee-dot{width:4px;height:4px;border-radius:50%;background:var(--blue-mid);flex-shrink:0}
