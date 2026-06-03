@@ -326,19 +326,19 @@ body{font-family:var(--sans);background:var(--bg);color:var(--ink);-webkit-font-
    NAVBAR SHRINKS ON SCROLL
 ───────────────────────────────────────── */
 nav{
-  position:fixed;top:0;left:0;right:0;z-index:200;
-  padding:0 52px;height:66px;
-  display:flex;align-items:center;justify-content:space-between;
-  background:rgba(249,248,246,0);backdrop-filter:blur(0px);
-  border-bottom:1px solid transparent;
-  /* Add height + logo transitions */
-  transition:background .4s,backdrop-filter .4s,border-color .4s,height .35s var(--ease-out),padding .35s var(--ease-out);
+  position:fixed;top:0;left:0;right:0;z-index:200;
+  padding:0 52px;height:66px;
+  display:flex;align-items:center;justify-content:space-between;
+  background:rgba(249,248,246,0);backdrop-filter:blur(0px);
+  border-bottom:1px solid transparent;
+  /* Add height + logo transitions */
+  transition:background .4s,backdrop-filter .4s,border-color .4s,height .35s var(--ease-out),padding .35s var(--ease-out);
 }
 nav.scrolled{
-  background:rgba(249,248,246,.93);
-  backdrop-filter:blur(20px);
-  border-color:var(--border);
-  height:54px;
+  background:rgba(249,248,246,.93);
+  backdrop-filter:blur(20px);
+  border-color:var(--border);
+  height:54px;
 }
 nav.scrolled .logo{font-size:1.1rem}
 nav.scrolled .nav-cta{padding:6px 18px;font-size:12px}
@@ -843,15 +843,11 @@ nav.open .nav-hamburger span:nth-child(3){transform:translateY(-6.5px) rotate(-4
     <span></span><span></span><span></span>
   </button>
 </nav>
-
-<div class="nav-drawer" id="nav-drawer" aria-hidden="true">
-  <div class="drawer-links">
-    <button class="drawer-btn" onclick="scrollToWork();closeMenu()">Work</button>
-    <button class="drawer-btn" onclick="scrollToProcess();closeMenu()">Process</button>
-    <button class="drawer-cta" onclick="showPage('contact');closeMenu()">Say hello →</button>
-  </div>
+<div class="nav-drawer" id="nav-drawer" role="navigation" aria-label="Mobile navigation">
+  <button class="nav-btn" onclick="scrollToWork();closeMenu()">Work</button>
+  <button class="nav-btn" onclick="scrollToProcess();closeMenu()">Process</button>
+  <button class="nav-cta" style="margin-top:8px" onclick="showPage('contact');closeMenu()"><span>Say hello →</span></button>
 </div>
-
 
 <!-- ══════════════════════════════════
      PAGE: HOME
